@@ -29,13 +29,17 @@ jobs:
           pytest --alluredir=report/allure_results --clean-alluredir
         continue-on-error: true
 
+      - name: 安装 Allure 命令行工具
+        run: |
+          ALLURE_VERSION=2.33.0
+          wget -q https://github.com/allure-framework/allure2/releases/download/${ALLURE_VERSION}/allure-${ALLURE_VERSION}.tgz
+          tar -xzf allure-${ALLURE_VERSION}.tgz
+          echo "$(pwd)/allure-${ALLURE_VERSION}/bin" >> $GITHUB_PATH
+
       - name: 生成 Allure 报告
-        uses: simple-joy/allure-report-action@v1.9
         if: always()
-        with:
-          allure_results: report/allure_results
-          allure_history: report/allure-history
-          allure_report: report/allure-report
+        run: |
+          allure generate report/allure_results -o report/allure-report --clean
 
       - name: 发布 Allure 报告到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
