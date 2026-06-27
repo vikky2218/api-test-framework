@@ -1,0 +1,8 @@
+# 环境 1：JSONPlaceholder（帖子用例）
+base_url: "https://jsonplaceholder.typicode.com"
+
+# 环境 2：Petstore（宠物用例）
+# base_url: "https://petstore.swagger.io/v2"
+
+timeout: 30
+log_level: "INFO"

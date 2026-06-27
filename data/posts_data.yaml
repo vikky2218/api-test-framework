@@ -1,0 +1,18 @@
+# 帖子查询测试——参数化数据
+post_ids:
+  - 1
+  - 2
+  - 3
+  - 5
+  - 10
+
+# 创建帖子——请求体
+create_payload:
+  title: "pytest框架练习"
+  body: "这是通过自动化创建的帖子"
+  userId: 1
+
+fixture_payload:
+  title: "fixture准备的数据"
+  body: "测试内容"
+  userId: 1
