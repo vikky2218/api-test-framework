@@ -1,0 +1,19 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"模拟偶发失败：50% 概率断言失败","18","test_maybe_fail","testcase","Sat Jun 27 17:15:48 UTC 2026","passed","Sat Jun 27 17:15:48 UTC 2026","TestPosts","test_posts","",""
+"数据驱动：批量验证多个帖子 ID 都能查到","20","test_get_multiple_posts[2]","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:46 UTC 2026","TestPosts","test_posts","",""
+"
+场景：完整宠物生命周期
+1. 创建一只宠物，拿到 ID
+2. 用这个 ID 查询，验证创建成功
+3. 更新宠物状态，验证状态变化
+4. 删除宠物，验证删除成功
+","49","test_pet_crud_flow","testcase","Sat Jun 27 17:15:46 UTC 2026","failed","Sat Jun 27 17:15:46 UTC 2026","TestPetLifecycle","test_pet_lifecycle","",""
+"场景：创建帖子 → 验证能查到 → 测试结束后自动删除","18","test_post_lifecycle","testcase","Sat Jun 27 17:15:48 UTC 2026","failed","Sat Jun 27 17:15:48 UTC 2026","TestPosts","test_posts","",""
+"正向：创建帖子","53","test_create_post","testcase","Sat Jun 27 17:15:47 UTC 2026","passed","Sat Jun 27 17:15:47 UTC 2026","TestPosts","test_posts","",""
+"正向：获取所有帖子","19","test_get_all_posts","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:46 UTC 2026","TestPosts","test_posts","",""
+"数据驱动：批量验证多个帖子 ID 都能查到","123","test_get_multiple_posts[5]","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:47 UTC 2026","TestPosts","test_posts","",""
+"数据驱动：批量验证多个帖子 ID 都能查到","131","test_get_multiple_posts[10]","testcase","Sat Jun 27 17:15:47 UTC 2026","passed","Sat Jun 27 17:15:47 UTC 2026","TestPosts","test_posts","",""
+"正向：获取单个帖子","17","test_get_single_post","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:46 UTC 2026","TestPosts","test_posts","",""
+"数据驱动：批量验证多个帖子 ID 都能查到","18","test_get_multiple_posts[3]","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:46 UTC 2026","TestPosts","test_posts","",""
+"数据驱动：批量验证多个帖子 ID 都能查到","17","test_get_multiple_posts[1]","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:46 UTC 2026","TestPosts","test_posts","",""
+"异常：访问不存在的帖子","19","test_get_post_not_found","testcase","Sat Jun 27 17:15:46 UTC 2026","passed","Sat Jun 27 17:15:46 UTC 2026","TestPosts","test_posts","",""
